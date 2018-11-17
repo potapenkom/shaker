@@ -12,7 +12,7 @@ h1
     @media screen and (max-width: 768px)
         font-size: 25px
     
-h3 
+h2
     font-size: 32px
     line-height: 1.34
     text-align: center
@@ -64,7 +64,7 @@ a
 
 .header
     background-color: #0f89f4
-    padding: 29px 0 0 0
+    padding: 29px 0 65px 0
     @media screen and (max-width: 992px)
         padding: 15px 0 30px 0
 
@@ -78,10 +78,10 @@ a
     @media screen and (max-width: 768px)
         font-size: 9px
         text-align: center
-    
-/*Section HEADER TOP*/
 
-.header__top__wrap
+/*Section NAVIGATION*/ 
+
+.navigation__wrap
     display: flex
     justify-content: flex-start
     align-items: flex-end
@@ -89,14 +89,12 @@ a
         justify-content: space-between
         align-items: center
 
-/*Section HEADER TOP ends*/ 
-
-.header__top__logo
+.logo
     padding: 0 140px 0 0
     @media screen and (max-width: 768px)
         padding: 0 65px 0 0
 
-.header__top__link  
+.nav__link  
     font-size: 13.5px
     color: #d2e7fb
     padding: 10px 37px 10px 0
@@ -106,11 +104,11 @@ a
         font-size: 8px
         padding: 10px 23px 10px 0
 
-/*Section HEADER TOP ends*/ 
+/*Section NAVIGATION ends*/ 
     
-/*Section HEADER CENTER*/  
+/*Section INTRODUSE*/  
     
-.header__center__wrap
+.introduce__wrap
     display: flex
     justify-content: flex-start
     align-items: flex-end
@@ -122,31 +120,34 @@ a
         flex-direction: column
         align-items: center
     
-.header__center__left
+.introduce__left
     padding: 0px 85px 0 0px
     @media screen and (max-width: 992px)
         padding: 0
 
-.header__center__title
+.introduce__title
+    font-size: 36px
+    color: #ffffff
+    line-height: 1.191
+    text-align: left
     width: 100%
     max-width: 400px
     @media screen and (max-width: 992px)
         max-width: 330px
-
-.header__center h1 
-    line-height: 1.191
-    text-align: left
+        font-size: 30px
     @media screen and (max-width: 768px)
         text-align: center
-
-.header__center__texts
+        font-size: 25px
+        margin: 0 auto
+    
+.introduce__text
     width: 100%
     max-width: 515px
     padding: 42px 0 38px 0
     @media screen and (max-width: 768px)
         max-width: 400px
 
-.header__center__links
+.introduce__links
     display: flex
     flex-direction: column
     width: 100%
@@ -156,15 +157,16 @@ a
     @media screen and (max-width: 768px)
         max-width: 320px 
         align-items: center
+        margin: 0 auto
     
-.header__center__button 
+.introduce__button 
     width: 100%
     max-width: 232px 
     @media screen and (max-width: 992px)
         max-width: 200px 
         height: 50px
 
-.header__center__link
+.introduce__link
     font-size: 14px
     color: #a3d0fc
     text-align: center
@@ -176,7 +178,7 @@ a
     @media screen and (max-width: 768px)
         font-size: 9px
 
-.header__center__item
+.introduce__item
     font-size: 17px
     padding: 0 0 0 5px
     @media screen and (max-width: 992px)
@@ -184,29 +186,29 @@ a
     @media screen and (max-width: 768px)
         font-size: 12px
 
-.header__center__img
+.introduce__img
     width: 100% 
     max-width: 578px
     height: 100%
     max-height: 432px   
 
-/*Section HEADER CENTER ends*/    
+/*Section INTRODUSE ends*/    
 
-/*Section HEADER BOTTOM*/
+/*Section COMPANY*/
 
-.header__bottom__wrap
+.company__wrap
     display: flex
     justify-content: center
     @media screen and (max-width: 768px)
         flex-direction: column
         align-items: center
 
-.header__bottom__link
+.company__link
     padding: 0 30px 0 0
     @media screen and (max-width: 1117px)
         padding: 0 9px 0 0
       
-.header__bottom__img
+.company__img
     max-width: 89px
     width: 100%    
     @media screen and (max-width: 1117px)
@@ -216,12 +218,12 @@ a
     @media screen and (max-width: 768px)
         max-width: 50px    
     
-.header__bottom__text
+.company__text
     padding: 0 35px 0 0
     @media screen and (max-width: 768px)
         padding: 0 0 10px 0
 
-/*Section HEADER BOTTOM ends*/    
+/*Section COMPANY ends*/    
 
 /*Section HEADER ends*/ 
 
@@ -251,11 +253,12 @@ a
 .carousel__prew   
     position: absolute
     top: 50%
+    left: -1%
 
 .carousel__next 
     position: absolute
     top: 50%  
-    right: -15px  
+    right: -1% 
 
 .owl-item
     height: 297px
@@ -279,6 +282,7 @@ a
     line-height: 1.333
     text-align: center
     font-weight: 800
+    padding: 32px 0 0 0
     @media screen and (max-width: 992px)
         font-size: 27px
     @media screen and (max-width: 768px)
@@ -347,26 +351,26 @@ a
         flex-direction: column-reverse
         padding: 0 0 20px 0
 
-.about__block__titles
+.block__titles
     @media screen and (max-width: 768px)
         padding: 30px 0 0 0
 
-.about__block__content
+.block__content
     @media screen and (max-width: 768px)
         padding: 0 0 20px 0
 
-.about__block__text__top
+.block__text__top
     padding: 50px 0 50px 0
     width: 100%
     max-width: 477px
     @media screen and (max-width: 992px)
         padding: 30px 0 30px 0
 
-.about__block__text__bottom
+.block__text__bottom
     width: 100%
     max-width: 496px
 
-.abaut__block__img
+.block__img
     width: 100%
     max-width: 562px    
 
@@ -511,29 +515,26 @@ a
     @media (min-width: 992px) and (max-width: 1222px)
         font-size: 8px
 
-/*Section REVIEWS ends*/     
+/*Section REVIEWS ends*/    
 
-/*Section MAIN ends*/      
+/*Section BENEFIT*/ 
 
-/*Section FOOTER*/ 
-
-/*Section FOOTER TOP*/ 
-
-.footer__top
+.benefit
     background-color: #0e88f3
 
-.top__wrap
+.benefit__wrap
     text-align: center
     padding: 75px 0 80px 0
 
-.footer__top__title
+.benefit__title
     width: 100%
     max-width: 705px
+    margin: 0 auto
 
-.footer__top h3 
+.benefit h2 
     color: #ffffff
 
-.footer__top__text
+.benefit__text
     text-align: center
     font-size: 16px
     color: #d2e7fb
@@ -541,15 +542,22 @@ a
     @media screen and (max-width: 992px)
         font-size: 12px
     @media screen and (max-width: 768px)
-        font-size: 10px
+        font-size: 11px
 
-.footer__top__button
+.benefit__button
     width: 100%
     max-width: 247px
     @media screen and (max-width: 992px)
         max-width: 215px
+    @media screen and (max-width: 992px)
+        max-width: 183px 
 
-/*Section FOOTER TOP ends*/ 
+/*Section BENEFIT ends*/ 
+
+/*Section MAIN ends*/      
+
+/*Section FOOTER*/ 
+
 /*Section CONTACTS*/ 
 .contacts__wrap
     padding: 75px 0 63px 0
@@ -566,7 +574,9 @@ a
     padding: 0 65px 0 0
     @media screen and (max-width: 992px)
         padding: 0 50px 0 0
-
+    @media screen and (max-width: 768px)
+        padding: 0 0px 0 0
+    
 .social
     padding: 0 0 0 80px
     @media screen and (max-width: 992px)
@@ -594,6 +604,7 @@ a
     max-width: 240px
     @media screen and (max-width: 768px)
         text-align: center
+        padding: 20px 0 20px 0
 
 .contact__link
     color: #3974ca
@@ -621,12 +632,14 @@ a
     align-items: center
     flex-wrap: wrap
     padding: 111px 0 0 0
+    @media screen and (max-width: 768px)
+        justify-content: center
+        padding: 35px 0 0 0 
 
 .footer__link, .fb-like
     font-size: 15px
     font-family: Open Sans, sans-serif
     letter-spacing: -1px
-
 
 .footer__text
     font-size: 12.5px
@@ -634,7 +647,12 @@ a
     line-height: 1.751
     text-align: left
     margin: 0 0 0 16px
-   
+
+.fb-root span 
+    font-size: 15px
+    font-family: Open Sans, sans-serif
+
+
 /*Section CONTACTS ends*/ 
 
 /*Section FOOTER ends*/        
