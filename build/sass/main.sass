@@ -563,7 +563,7 @@ a
 
 .contact
     display: flex
-    justify-content: center
+    justify-content: flex-start
     align-items: flex-start
     flex-wrap: wrap
     @media screen and (max-width: 768px)
@@ -571,12 +571,16 @@ a
         align-items: center
 
 .contact__block
-    padding: 0 65px 0 0
+    padding: 0 0 0 65px
     @media screen and (max-width: 992px)
-        padding: 0 65px 0 0
+        padding: 0 0 0 55px
     @media screen and (max-width: 768px)
         padding: 0 0px 0 0
     
+.social
+    padding: 0 0 0 80px
+    @media screen and (max-width: 992px)
+        padding: 0 0 0 0px
 
 .contact__title
     font-size: 12.5px
@@ -626,7 +630,7 @@ a
     justify-content: flex-start
     align-items: center
     flex-wrap: wrap
-    padding: 111px 0 0 0
+    padding: 111px 0 0 65px
     @media screen and (max-width: 768px)
         justify-content: center
         padding: 35px 0 0 0 
