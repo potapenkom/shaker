@@ -242,19 +242,29 @@ a
     width: 90%
 
 .carousel__nav
+    position: relative
+    font-size: 30px
+    color: #1e91f7
     width: 5%   
     height: 297px 
 
-.owl__item
+.carousel__prew   
+    position: absolute
+    top: 50%
+
+.carousel__next 
+    position: absolute
+    top: 50%  
+    right: -15px  
+
+.owl-item
     height: 297px
     display: block
     border-top: 1px solid #1e91f7
     border-right: 1px solid  #1e91f7
     box-sizing: border-box  #1e91f7
+    box-sizing: border-box
 
-// .active
-    // width: 300px !important
-    
 .owl-item:first-child
     border-left: 1px solid #1e91f7
 
@@ -382,7 +392,6 @@ a
     padding: 60px 0 80px 0
     @media screen and (max-width: 768px)
         padding: 50px 0 60px 0
-
 
 .reviews__cards
     display: flex
@@ -585,7 +594,6 @@ a
     max-width: 240px
     @media screen and (max-width: 768px)
         text-align: center
-
 
 .contact__link
     color: #3974ca
